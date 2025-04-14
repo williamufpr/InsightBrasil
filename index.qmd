@@ -1,7 +1,30 @@
 ---
 title: "InsightBrasil"
+format:
+  html:
+    code-fold: false
+jupyter: python3
+
 ---
+Para Entender o mundo a partir dos Dados
 
-## Quarto
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+#| echo: false  
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+import numpy as np
+np.float = float
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 4 * np.pi * r
+fig, ax = plt.subplots(
+  subplot_kw = {'projection': 'polar'} 
+)
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+

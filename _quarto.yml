@@ -1,19 +1,19 @@
 project:
   type: website 
 
+format: 
+    html:
+      theme: journal
+      echo: false
+
 website:
   title: "InsightBrasil"
+  
   navbar: 
     left:
       - text: "Home"
         href: index.qmd
       - text: "Sobre"
         href: about.qmd
-
-
-format:
-  html:
-    theme: cosmo
-    toc: true
-    
+   
 
