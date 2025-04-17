@@ -2,23 +2,25 @@
 title: "Brasil Insight Home"
 format: html
 editor: visual
-jupyter: python3
+execute: 
+  echo: true
 ---
 
 ```{r}
 #| label: load-packages
 #| include: false
+#| echo: false 
 
 library(tidyverse)
 library(palmerpenguins)
 
 ```
 
-## Brasil Insight with Quarto 
+## Brasil Insight with Quarto
 
 Com quarto podemos inserir análise de dados ( e outros códigos) diretamente no corpo do Artigo
 
-É isso que vamos ver por aqui
+É isso que vamos ver por aqui. Vamos validar os recursos
 
 ## Conheça os Pinguins
 
@@ -31,7 +33,7 @@ The plot below shows the relationship between flipper and bill lengths of these 
 ```{r}
 #| label: plot-penguins
 #| warning: false
-#| echo: false
+#| echo: false 
 
 library(palmerpenguins)
 library(ggplot2)
