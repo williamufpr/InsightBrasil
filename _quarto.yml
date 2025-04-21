@@ -1,9 +1,27 @@
+---
 project:
   type: website 
 
 format: 
     html:
       theme: journal
+      self-contained: true
+      code-fold: true # oculta códigos 
+      cold-tools: false
+
+knitr:
+  opts_chunk: 
+    collapse: true
+    comment: "#>"
+
+execute: 
+  echo: true
+  eval: true
+  freeze: false
+  cache: false
+  warning: false
+  message: false
+
 
 
 website:
@@ -15,5 +33,5 @@ website:
         href: index.qmd
       - text: "Sobre"
         href: about.qmd
-   
+  
 

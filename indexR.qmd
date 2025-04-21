@@ -1,0 +1,40 @@
+---
+format: 
+  html:
+    code-fold: false
+    toc: true
+    theme: flatly
+    number-sections: true
+editor: visual
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+Para Entender o mundo a partir dos Dados
+
+## Codigo R  
+
+```{r}
+#| message: false
+#| results: 'asis'
+#| echo: false
+#| warning: false
+
+
+library(knitr)
+library(kableExtra)
+
+dados <- data.frame(
+  Categoria = c("A", "B", "C"),
+  Quantidade = c(12, 34, 56),
+  Percentual = c(0.2, 0.3, 0.5)
+)
+
+kable(dados, caption = "Exemplo de Tabela") |>
+  kable_styling(
+    bootstrap_options = c("striped", "hover", "condensed", "responsive"),
+    full_width = FALSE,
+    position = "center"
+  )
+```
