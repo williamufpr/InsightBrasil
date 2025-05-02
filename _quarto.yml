@@ -2,36 +2,29 @@
 project:
   type: website 
 
-format: 
-    html:
-      theme: journal
-      self-contained: true
-      code-fold: true # oculta códigos 
-      cold-tools: false
-
-knitr:
-  opts_chunk: 
-    collapse: true
-    comment: "#>"
-
-execute: 
-  echo: true
-  eval: true
-  freeze: false
-  cache: false
-  warning: false
-  message: false
-
-
-
 website:
-  title: "InsightBrasil"
-  
-  navbar: 
-    left:
-      - text: "Home"
-        href: index.qmd
-      - text: "Sobre"
-        href: about.qmd
-  
+  title: "Insight Brasil"
+  open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
+  page-footer: "Made with ❤️ and Quarto"
+  navbar:
+    title: William Corners
+    right:
 
+      - href: pages/about.qmd
+        text: About
+        icon: megaphone
+      - href: blog/index.qmd
+        text: Blog
+        icon: pencil
+    tools: 
+      - icon: github
+        href: github.com
+      - icon: airplane-engines 
+      - text: "<i class='house'></i>"
+      
+format:
+  html:
+    backgroundcolor: "#eeffee"
+    theme: [cosmo, styles.scss]
+
+    

@@ -1,66 +1,29 @@
 ---
-title: "Hello, Quarto"
-format: html
+title: "Insight Brasil"
+subtitle: "by William Alencar - as Data Scientist"
+image: ./assets/images/profile.jpg
+about: # https://quarto.org/docs/websites/website-about.html
+  template: trestles
+  image-shape: round
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/williambr
 editor: visual
 execute: 
   warning: false
   message: false 
 ---
 
-```{r}
-#| label: load-packages
-#| echo: false
+## Insigth Brasil 🇧🇷
 
+Iniciei este projeto para por em prática meu conhecimentos em Análise de Dados e Aprendizado de Máquina .
 
-library(tidyverse)
-library(palmerpenguins)
-```
+Diversos assuntos de interesse geral seriam melhor debatidos se insistíssemos numa análise de informações sobre aquele tópico.
 
-## Meet Quarto
+Por isso , a cada artigo, quero trazer tópicos presentes na sociedade Brasileira com uma análise dos dados que temos a respeito.
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Meet the penguins
-
-![](https://raw.githubusercontent.com/quarto-dev/quarto-web/main/docs/get-started/hello/rstudio/lter_penguins.png){style="float:right;" fig-alt="Illustration of three species of Palmer Archipelago penguins: Chinstrap, Gentoo, and Adelie. Artwork by @allison_horst." width="401"}
-
-The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins "palmerpenguins R package") package contains size measurements for `{r} nrow(penguins)` penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.
-
-The plot below shows the relationship between flipper and bill lengths of these penguins.
-
-```{r}
-#| label: plot-penguins
-
-
-ggplot(penguins, 
-       aes(x = flipper_length_mm, y = bill_length_mm)) +
-  geom_point(aes(color = species, shape = species)) +
-  scale_color_manual(values = c("darkorange","purple","cyan4")) +
-  labs(
-    title = "Flipper and bill length",
-    subtitle = "Dimensions for penguins at Palmer Station LTER",
-    x = "Flipper length (mm)", y = "Bill length (mm)",
-    color = "Penguin species", shape = "Penguin species"
-  ) +
-  theme_minimal()
-```
-
-```{python}
-#| label: fig-polar
-#| fig-cap: "A line plot on a polar axis"
-
-
-import numpy as np
-np.float = float 
-import matplotlib.pyplot as plt
-
-r = np.arange(0, 2, 0.01)
-theta = 2 * np.pi * r
-fig, ax = plt.subplots(
-  subplot_kw = {'projection': 'polar'} 
-)
-ax.plot(theta, r)
-ax.set_rticks([0.5, 1, 1.5, 2])
-ax.grid(True)
-plt.show()
-```
+Transformar dados em informação e contribuir com o debate.
