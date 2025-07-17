@@ -13,7 +13,7 @@ renv/
 # Python
 __pycache__/
 *.py[cod]
-.venv/
+venv/
 env/
 
 # Quarto
@@ -25,7 +25,7 @@ index_files/
 data/*
 !data/energy30daysLong.csv
 *.rds
-*.csv
+
 
 # Git
 InsightBrasil.git/
