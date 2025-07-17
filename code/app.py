@@ -40,7 +40,7 @@ def load_transformed_data(file_path):
 
 # Caminho para o seu CSV transformado.
 # Assumimos que 'app.py' está em 'src/' e o CSV em 'src/data/'
-transformed_csv_path = '../data/energy30daysLong.csv'
+transformed_csv_path = 'data/energy30daysLong.csv'
 df_consumption = load_transformed_data(transformed_csv_path)
 
 # --- Título e Introdução da Análise ---
