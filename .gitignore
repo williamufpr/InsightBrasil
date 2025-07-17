@@ -1,0 +1,35 @@
+/.quarto/
+/_site/
+/williamufpr.github.io/
+.Rproj.user
+# R
+.Rhistory
+.RData
+.Rproj.user/
+.RDataTmp
+.Renviron
+renv/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+env/
+
+# Quarto
+_site/
+*.html
+index_files/
+
+# Dados e arquivos grandes
+data/*
+!data/energy30daysLong.csv
+*.rds
+*.csv
+
+# Git
+InsightBrasil.git/
+backup.bundle
+
+# Outros
+.DS_Store

@@ -1,0 +1,29 @@
+---
+title: "Insight Brasil"
+subtitle: "by William Alencar - as Data Scientist"
+image: ./assets/images/profile.jpg
+about: # https://quarto.org/docs/websites/website-about.html
+  template: trestles
+  image-shape: round
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/williambr
+editor: visual
+execute: 
+  warning: false
+  message: false 
+---
+
+## Insigth Brasil 🇧🇷
+
+Iniciei este projeto para por em prática meu conhecimentos em Análise de Dados e Aprendizado de Máquina .
+
+Diversos assuntos de interesse geral seriam melhor debatidos se insistíssemos numa análise de informações sobre aquele tópico.
+
+Por isso , a cada artigo, quero trazer tópicos presentes na sociedade Brasileira com uma análise dos dados que temos a respeito.
+
+Transformar dados em informação e contribuir com o debate.

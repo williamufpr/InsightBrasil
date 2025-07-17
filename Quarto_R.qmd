@@ -1,0 +1,51 @@
+---
+title: "Brasil Insight Home"
+format: html
+editor: visual
+execute: 
+  echo: true
+---
+
+```{r}
+#| label: load-packages
+#| include: false
+#| echo: false 
+
+library(tidyverse)
+library(palmerpenguins)
+
+```
+
+## Brasil Insight with Quarto
+
+Com quarto podemos inserir análise de dados ( e outros códigos) diretamente no corpo do Artigo
+
+É isso que vamos ver por aqui. Vamos validar os recursos
+
+## Conheça os Pinguins
+
+![](https://raw.githubusercontent.com/quarto-dev/quarto-web/main/docs/get-started/hello/rstudio/lter_penguins.png){fig-alt="Illustration of three species of Palmer Archipelago penguins: Chinstrap, Gentoo, and Adelie. Artwork by @allison_horst." style="float:right;" width="298"}
+
+The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins "palmerpenguins R package") package contains size measurements for `{r} nrow(penguins)` penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.
+
+The plot below shows the relationship between flipper and bill lengths of these penguins.
+
+```{r}
+#| label: plot-penguins
+#| warning: false
+#| echo: false 
+
+library(palmerpenguins)
+library(ggplot2)
+ggplot(penguins, 
+       aes(x = flipper_length_mm, y = bill_length_mm)) +
+  geom_point(aes(color = species, shape = species)) +
+  scale_color_manual(values = c("darkorange","purple","cyan4")) +
+  labs(
+    title = "Flipper and bill length",
+    subtitle = "Dimensions for penguins at Palmer Station LTER",
+    x = "Flipper length (mm)", y = "Bill length (mm)",
+    color = "Penguin species", shape = "Penguin species"
+  ) +
+  theme_minimal()
+```

@@ -1,0 +1,25 @@
+---
+title: "About Me"
+author: "William Alencar"
+date: "`r Sys.Date()`"
+---
+
+# About Me
+
+Hello! Eu sou William Alencar , e este é o site para eu apresentar meus trabalhos em Ciência de Dados
+e também artigos sobre os mais variados temas. 
+
+
+## Meus Interesses 
+
+- Data Analysis and Visualization
+- Machine Learning and AI
+- Programming (Python, R, SQL)
+- Sharing knowledge and collaborating on projects
+
+## Contact
+
+Feel free to connect with me:
+
+- Email: william@goodfy.me 
+- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/williambr)
