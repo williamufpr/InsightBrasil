@@ -31,7 +31,7 @@ def render(df_consumption):
 """, unsafe_allow_html=True)
      
     df_weekdays = df_consumption[df_consumption['day_type'] == 'Dia de Semana'].copy()
-
+    df_weekdays = df_weekdays[df_weekdays['consumption_kwh'] > 0] 
 # Garantir que a coluna 'date' seja do tipo datetime para ordenação correta no Plotly
     df_weekdays['date'] = pd.to_datetime(df_weekdays['date'])
 
@@ -98,10 +98,10 @@ def render(df_consumption):
 
 # 7. Criar o Heatmap
     fig = go.Figure(data=go.Heatmap(
-        x=pivot_table.columns.strftime('%Y-%m-%d').tolist(), # Eixo X: Datas dos dias de semana
+        x=pd.to_datetime(pivot_table.columns).strftime('%Y-%m-%d').tolist(), # Eixo X: Datas dos dias de semana
         y=pivot_table.index.tolist(),                       # Eixo Y: Equipamentos (com marcações)
         z=pivot_table.values,                               # Valores Z: Consumo diário
-        colorscale='Viridis',                               # Escala de cores (cores mais fortes para maiores valores)
+        colorscale='Jet',                               # Escala de cores (cores mais fortes para maiores valores)
         colorbar=dict(title='Consumo (kWh)'),
         hovertemplate=(
         "<b>Data:</b> %{x}<br>"
