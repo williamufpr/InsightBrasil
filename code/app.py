@@ -11,7 +11,7 @@ import requests
 # imports do projeto 
 
 from transform import load_transformed_data 
-from tabs import intro
+from tabs import intro, explore
 
 
 if __name__ == "__main__":
@@ -21,7 +21,7 @@ if __name__ == "__main__":
 
     transformed_csv_path = 'data/energy30daysLong.csv'
     df_consumption = load_transformed_data(transformed_csv_path)
-
+    print(df_consumption.info())
 # -----------------------------
 # Função para carregar animação Lottie
 # -----------------------------
