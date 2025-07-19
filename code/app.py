@@ -5,9 +5,43 @@ import numpy as np
 import plotly.graph_objects as go
 import plotly.express as px
 from streamlit_plotly_events import plotly_events # Para interatividade de clique
+from streamlit_lottie import st_lottie
+import requests
 
 # --- 0. Configurações Iniciais da Página Streamlit ---
-st.set_page_config(layout="wide", page_title="Otimização de Consumo de Equipamentos")
+
+# -----------------------------
+# Função para carregar animação Lottie
+# -----------------------------
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+# -----------------------------
+# Configuração da Página
+# -----------------------------
+st.set_page_config(page_title="Análise de Consumo de Energia no Banco",
+                   page_icon="⚡",
+                   layout="wide")
+
+# -----------------------------
+# Cabeçalho
+# -----------------------------
+st.title("⚡ Análise de Consumo Energético de Computadores")
+
+# Animação Lottie no cabeçalho
+lottie_energy = load_lottieurl("https://assets8.lottiefiles.com/packages/lf20_jcikwtux.json")
+
+st_lottie(lottie_energy, height=200, key="energy")
+
+# -----------------------------
+# Abas
+# -----------------------------
+tabs = st.tabs(["📌 Introdução", "📈 Explorando os Dados", "💡 Descobertas", "✅ Plano de Ação"])
+
+
 
 # --- 1. Carregar e Preparar os Dados ---
 # Usamos st.cache_data para que os dados sejam carregados e processados apenas uma vez
