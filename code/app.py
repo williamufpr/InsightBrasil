@@ -11,7 +11,7 @@ import requests
 # imports do projeto 
 
 from transform import load_transformed_data 
-from tabs import intro, explore
+from tabs import intro, explore, group 
 
 
 if __name__ == "__main__":
@@ -58,3 +58,6 @@ if __name__ == "__main__":
         
     with tabs[1]:
         explore.render(df_consumption)
+
+    with tabs[2]:
+        group.render(df_consumption)
