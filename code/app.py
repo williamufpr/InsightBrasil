@@ -8,6 +8,8 @@ import plotly.express as px
 from streamlit_plotly_events import plotly_events # Para interatividade de clique
 from streamlit_lottie import st_lottie
 import requests
+from streamlit_plotly_events import plotly_events
+
 
 # imports do projeto 
 
