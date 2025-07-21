@@ -27,7 +27,7 @@ def mostrar_proxima_aba(nome_aba: str = "próxima aba", emoji: str = "➡️", a
     st.markdown("<hr style='margin-top:2rem; margin-bottom:1rem;'>", unsafe_allow_html=True)
 
     st.markdown("<h4 style='text-align:center; color:#003366;'>Pronto para seguir?</h4>", unsafe_allow_html=True)
-    st.markdown(f"<p style='text-align:center;'>Clique na <b>{emoji} {nome_aba}</b> n início da página para continuar!</p>", unsafe_allow_html=True)
+    st.markdown(f"<p style='text-align:center;'>Clique na <b>{emoji} {nome_aba}</b> no início da página para continuar!</p>", unsafe_allow_html=True)
 
     
    
