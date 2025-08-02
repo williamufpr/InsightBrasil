@@ -8,7 +8,7 @@ st.set_page_config(page_title="Storytelling com Consumo de Energia", layout="wid
 
 # === Caminhos fixos ===
 BASE_DIR = Path.cwd()
-DATA_DIR = BASE_DIR / "../data"
+DATA_DIR = BASE_DIR / "data"
 DATA_FILE = DATA_DIR / "energy30daysLongFormat.csv"
 
 print("Base Dir", BASE_DIR)
