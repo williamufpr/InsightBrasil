@@ -1,7 +1,7 @@
 ---
 title: "Insight Brasil"
 subtitle: "by William Alencar - as Data Scientist"
-image: ./assets/images/profile.jpg
+image: ./assets/images/deng-xiang.jpg
 about: # https://quarto.org/docs/websites/website-about.html
   template: trestles
   image-shape: round
@@ -26,4 +26,6 @@ Diversos assuntos de interesse geral seriam melhor debatidos se insistíssemos n
 
 Por isso , a cada artigo, quero trazer tópicos presentes na sociedade Brasileira com uma análise dos dados que temos a respeito.
 
-Transformar dados em informação e contribuir com o debate.
+Transformar dados em informação e contribuir com o debate.\
+\
+Leia os artigos no Blog e saiba mais sobre o projeto em "Sobre o Insight Brasil"
