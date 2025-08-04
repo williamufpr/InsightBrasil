@@ -6,9 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="William Alencar">
+<meta name="author" content="Alicia">
+<meta name="dcterms.date" content="2021-05-24">
+<meta name="description" content="An example post where the source document is a Jupyter Notebook">
 
-<title>About Me – Insight Brasil</title>
+<title>Third Blog Post – Insight Brasil</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,25 +23,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7b0d96cd82e6eae91bf31c4d1a8e85e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-d4d76bf8491c20bad77d141916dc28e1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-7b0d96cd82e6eae91bf31c4d1a8e85e0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,9 +105,12 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="About Me – Insight Brasil">
-<meta property="og:description" content="">
+<meta property="og:title" content="Third Blog Post – Insight Brasil">
+<meta property="og:description" content="An example post where the source document is a Jupyter Notebook">
+<meta property="og:image" content="git@github-williamufpr:williamufpr/InsightBrasil.git/blog/third-post/index_files/figure-html/cell-2-output-1.png">
 <meta property="og:site_name" content="Insight Brasil">
+<meta property="og:image:height" content="384">
+<meta property="og:image:width" content="721">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -81,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Home</span>
     </a>
   </div>
@@ -92,19 +131,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./pages/about.html"> <i class="bi bi-megaphone" role="img">
+    <a class="nav-link" href="../../pages/about.html"> <i class="bi bi-megaphone" role="img">
 </i> 
 <span class="menu-text">Sobre o Insight Brasil</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog/index.html"> <i class="bi bi-pencil" role="img">
+    <a class="nav-link" href="../../blog/index.html"> <i class="bi bi-pencil" role="img">
 </i> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools tools-wide">
-    <a href="./github.com" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="../../github.com" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
     <a href="" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-airplane-engines"></i></a>
     <a href="" title="<i class='house'></i>" class="quarto-navigation-tool px-1" aria-label="<i class='house'></i>"><i class="bi bi-"></i></a>
 </div>
@@ -121,9 +160,18 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About Me</h1>
-</div>
+<h1 class="title">Third Blog Post</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Science</div>
+    <div class="quarto-category">Data</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    An example post where the source document is a Jupyter Notebook
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -131,14 +179,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>William Alencar </p>
+             <p>Alicia </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Invalid Date</p>
+      <p class="date">May 24, 2021</p>
     </div>
   </div>
   
@@ -150,29 +198,34 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="about-me" class="level1">
-<h1>About Me</h1>
-<p>Hello! Eu sou William Alencar , e este é o site para eu apresentar meus trabalhos em Ciência de Dados e também artigos sobre os mais variados temas.</p>
-<section id="meus-interesses" class="level2">
-<h2 class="anchored" data-anchor-id="meus-interesses">Meus Interesses</h2>
-<ul>
-<li>Data Analysis and Visualization</li>
-<li>Machine Learning and AI</li>
-<li>Programming (Python, R, SQL)</li>
-<li>Sharing knowledge and collaborating on projects</li>
-</ul>
-</section>
-<section id="contact" class="level2">
-<h2 class="anchored" data-anchor-id="contact">Contact</h2>
-<p>Feel free to connect with me:</p>
-<ul>
-<li>Email: william@goodfy.me</li>
-<li>LinkedIn: <a href="https://www.linkedin.com/in/williambr">Your LinkedIn Profile</a></li>
-</ul>
+<p>The source for any page in your website could also be a Jupyter Notebook. This one is <code>third-post/index.ipynb</code>.</p>
+<p>Here’s an example I borrowed from the <a href="https://seaborn.pydata.org/examples/multiple_conditional_kde.html">Seaborn docs</a>:</p>
+<div id="cell-3" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>sns.set_theme(style<span class="op">=</span><span class="st">"whitegrid"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the diamonds dataset</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>diamonds <span class="op">=</span> sns.load_dataset(<span class="st">"diamonds"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the distribution of clarity ratings, conditional on carat</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>sns.displot(</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    data<span class="op">=</span>diamonds,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    x<span class="op">=</span><span class="st">"carat"</span>, hue<span class="op">=</span><span class="st">"cut"</span>,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    kind<span class="op">=</span><span class="st">"kde"</span>, height<span class="op">=</span><span class="dv">4</span>, aspect<span class="op">=</span><span class="fl">1.5</span>,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    multiple<span class="op">=</span><span class="st">"fill"</span>, clip<span class="op">=</span>(<span class="dv">0</span>, <span class="va">None</span>),</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    palette<span class="op">=</span><span class="st">"ch:rot=-.25,hue=1,light=.75"</span>,   </span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="index_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
-</section>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
