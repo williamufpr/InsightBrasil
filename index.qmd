@@ -2,22 +2,23 @@
 title: "Insight Brasil"
 subtitle: "by William Alencar - as Data Scientist"
 image: ./assets/images/deng-xiang.jpg
-about: # https://quarto.org/docs/websites/website-about.html
-  template: trestles
-  image-shape: round
-  links:
-    - icon: github
-      text: Github
-      href: https://github.com
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com/williambr
 editor: visual
 execute: 
   warning: false
   message: false 
+
+format:
+  html: 
+    theme: trestles
+    image-shape: round
+    css: ["assets/styles.scss","assets/fontawesome.css"]
+
+
+page-layout: full
 ---
 
+::: columns
+::: {.column width="60%"}
 ## Insigth Brasil 🇧🇷
 
 Iniciei este projeto para por em prática meu conhecimentos em Análise de Dados e Aprendizado de Máquina .
@@ -29,3 +30,37 @@ Por isso , a cada artigo, quero trazer tópicos presentes na sociedade Brasileir
 Transformar dados em informação e contribuir com o debate.\
 \
 Leia os artigos no Blog e saiba mais sobre o projeto em "Sobre o Insight Brasil"
+:::
+
+::: {.column width="40%"}
+![](./assets/images/deng-xiang.jpg){width="100%" style="border-radius: 12px;"}
+
+::: {style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;"}
+<!-- GitHub --> <a href="https://github.com/williamufpr" target="_blank" style="margin:0 8px; color:#000;"> <i class="fab fa-github fa-2x" aria-label="GitHub"></i> </a>
+
+<!-- LinkedIn --> <a href="https://linkedin.com/in/williambr" target="_blank" style="margin:0 8px; color:#0077B5;"> <i class="fab fa-linkedin fa-2x" aria-label="LinkedIn"></i> </a>
+:::
+:::
+:::
+
+<div id="latest-articles-section">
+## Últimos Artigos
+
+---
+title: 
+listing: 
+  - id: latest-blogs 
+    contents: "blog"
+    type: grid 
+    sort: "date desc"
+    max-items: 3
+    fields: [image, title, date, description]
+    exclude:
+      topic: "index"
+
+---
+
+:::{#latest-blogs}
+:::
+
+</div>

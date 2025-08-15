@@ -12,24 +12,32 @@ website:
   open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
   page-footer: "Made with ❤️ and Quarto"
   navbar:
-    title: Home
+    title: "Insight Brasil"
+    left: 
+      - text: Home 
+        href: index.qmd
+        icon: "fa-solid fa-house"
+
     right:
 
       - href: pages/about.qmd
         text: Sobre o Insight Brasil
-        icon: megaphone
+        icon: "fa-solid fa=bullhorn" 
+
       - href: blog/index.qmd
         text: Blog
-        icon: pencil
-    tools: 
-      - icon: github
-        href: github.com
-      - icon: airplane-engines 
-      - text: "<i class='house'></i>"
+        icon: "fa-solid fa-pencil"
+    
+      - icon: "fa-brands fa-github"
+        href: https://github.com 
+
+      - icon: "fa-brands fa-linkedin"
+        href: https://linkedin.com/in/williambr
+      
       
 format:
   html:
-    backgroundcolor: "#eeffee"
-    theme: [trestles, styles.scss]
+    theme: trestles
+    css: ["assets/styles.scss","assets/fontawesome.css"] 
 
     
