@@ -30,9 +30,9 @@
   {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
-    "title": "Blog",
+    "title": "Blog Index",
     "section": "",
-    "text": "First Post\n\n\nPost description for first post\n\n\n\nAlicia\n\n\nMay 22, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSecond Post\n\n\nPost description for second post\n\n\n\nAlicia\n\n\nMay 23, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nThird Blog Post\n\n\nAn example post where the source document is a Jupyter Notebook\n\n\n\nAlicia\n\n\nMay 24, 2021\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "First Post\n\n\nPost description for first post\n\n\n\nAlicia\n\n\nMay 22, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nSecond Post\n\n\nPost description for second post\n\n\n\nAlicia\n\n\nMay 23, 2021\n\n\n\n\n\n\n\n\n\n\n\nThird Blog Post\n\n\nAn example post where the source document is a Jupyter Notebook\n\n\n\nAlicia\n\n\nMay 24, 2021\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "Quarto_R.html",
@@ -68,6 +68,13 @@
     "title": "Insight Brasil",
     "section": "",
     "text": "Iniciei este projeto para por em prática meu conhecimentos em Análise de Dados e Aprendizado de Máquina .\nDiversos assuntos de interesse geral seriam melhor debatidos se insistíssemos numa análise de informações sobre aquele tópico.\nPor isso , a cada artigo, quero trazer tópicos presentes na sociedade Brasileira com uma análise dos dados que temos a respeito.\nTransformar dados em informação e contribuir com o debate.\n\nLeia os artigos no Blog e saiba mais sobre o projeto em “Sobre o Insight Brasil”"
+  },
+  {
+    "objectID": "index.html#últimos-artigos",
+    "href": "index.html#últimos-artigos",
+    "title": "Insight Brasil",
+    "section": "Últimos Artigos",
+    "text": "Últimos Artigos\n\n\n\n\n\n\n\n\nThird Blog Post\n\n\nAn example post where the source document is a Jupyter Notebook\n\n\n\nMay 24, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nSecond Post\n\n\nPost description for second post\n\n\n\nMay 23, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\nFirst Post\n\n\nPost description for first post\n\n\n\nMay 22, 2021\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/third-post/index.html",

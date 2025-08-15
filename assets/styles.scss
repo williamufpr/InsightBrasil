@@ -1,0 +1,63 @@
+/*-- scss:defaults --*/
+
+// Sass Variables
+// https://quarto.org/docs/output-formats/html-themes.html#sass-variables
+
+/* Navbar */
+.navbar .navbar-nav .nav-item .fa-solid,
+.navbar .navbar-nav .nav-item .fa-brands {
+  color: #333;            // cor padrão
+  transition: color 0.3s;
+}
+
+.navbar .navbar-nav .nav-item:hover .fa-solid,
+.navbar .navbar-nav .nav-item:hover .fa-brands {
+  color: #1e90ff;         // cor ao passar o mouse
+}
+
+/* Navbar tools */
+.navbar .navbar-tools .fa-brands {
+  color: #555;
+  transition: color 0.3s, transform 0.2s;
+}
+
+.navbar .navbar-tools a:hover .fa-brands {
+  color: #0077B5;         // LinkedIn azul
+  transform: scale(1.2);
+}
+
+/* Ícones abaixo da imagem */
+.profile-icons i {
+  transition: color 0.3s, transform 0.2s;
+}
+
+.profile-icons a:hover i {
+  color: #1e90ff;
+  transform: scale(1.3);
+}
+
+#latest-articles-section { 
+  margin-top: 4rem; 
+}
+
+
+$theme-lightgreen: #eeffee;
+
+/* Colors */
+$body-bg: $theme-lightgreen;
+$body-color: rgb(55, 58, 60);
+$link-color: rgb(39, 128, 227);
+
+/* Fonts */
+$font-family-sans-serif: "Source Sans Pro", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-size-root: 17px;
+
+/*-- scss:rules --*/ 
+
+h1, h2 { 
+  text-transform: uppercase;
+}
+span.navbar-title:hover {
+  color: red;
+  transition-duration: 0.5s;
+}

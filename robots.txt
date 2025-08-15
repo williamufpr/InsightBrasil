@@ -1,1 +1,1 @@
-Sitemap: git@github-williamufpr:williamufpr/InsightBrasil.git/sitemap.xml
+Sitemap: https://williamufpr.github.io/InsightBrasil/sitemap.xml
