@@ -2,7 +2,9 @@
 project:
   type: website 
   output-dir: _site
-  title: "Insight Brasil"
+  title: "Insight Brasil" 
+  resources: 
+    - "!data/**"
   
 
 website:
